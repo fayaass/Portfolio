@@ -1,0 +1,623 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header Styling */
+header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Padding */
+section {
+    padding: 60px 0;
+}
+
+
+/* Project Section */
+.projects-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    color: #1abc9c;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #16a085;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .about-section .about-text {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .project-item {
+        padding: 15px;
+    }
+
+    .about-section h2 {
+        font-size: 1.6em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+
+    .project-item h3 {
+        font-size: 1.5em;
+    }
+
+    .project-item p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Page Specific Styles */
+
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.about-section .profile-image {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section .profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #1abc9c;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .about-text {
+    flex: 2;
+    padding: 20px;
+    margin-left: 30px;
+    max-width: 600px;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Add this to your style.css */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+    
+
+
+
+
+
+/* General Styles for Projects Page */
+
+
+/* Button Styling */
+.project-button {
+    background-color: #1abc9c; /* Green color similar to header */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.project-button:hover {
+    background-color: #16a085; /* Darker shade for hover */
+}
+
+.project-button:focus {
+    outline: none;
+}
+
+.project-button:active {
+    background-color: #1abc9c; /* Reset background color on button press */
+}
+
+
+
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+}
+
+
+
+
+
+
+/* .project-item1{
+    background-image: url(./images/hublot\ background.webp);
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 30vh; 
+    margin: 0;
+    padding: 0;
+    color: yellow; /
+    
+
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+} */
+
+
+
+
+
+
+
+
+
+/* Main content styling
+main {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.projects-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.project-link {
+    color: #1abc9c;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #16a085;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles for Projects Page */
+.projects-page main {
+    padding: 80px 0;
+    background-color: #f4f6f9;
+}
+
+.projects-section {
+    padding: 40px 0;
+}
+
+.project-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-item .project-link {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.project-item .project-link:hover {
+    color: #16a085;
+}
+
+/* Hover Effects */
+.project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for Projects */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Page Specific Styles */
+
+/* Contact Form Section */
+.contact-page main {
+    padding: 80px 0;
+    background-color: #f4f6f9;
+    margin-top: 40px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Form Group (input fields) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #16a085;
+}
+
+
+
+

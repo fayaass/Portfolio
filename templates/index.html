@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <img src="../static/images/unknown.png" alt="Profile Picture">
+            <div class="about-text">
+                <h2>Hi, I'm Muhammed Fayas</h2>
+                <p>I'm a passionate software developer with experience in Python, Flask, and JavaScript. I love solving complex problems and building innovative solutions.</p>
+                <p>My skills include web development, data analysis, and machine learning. Feel free to explore my projects and get in touch with me!</p>
+                <!-- Add the button to navigate to Projects Page -->
+                <a href="/projects">
+                    <button class="project-button">My Projects</button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
+
