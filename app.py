@@ -62,3 +62,30 @@ def contact_success():
 # Run the application on localhost:5000
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
+
+
+
+
+
+
+
+# .project-item1{
+#     background-image: url(../static/images/hublot\ background.webp);
+#     background-size: cover; 
+#     background-position: center center; 
+#     background-repeat: no-repeat; 
+#     height: 30vh; 
+#     margin: 0;
+#     padding: 0;
+#     color: yellow; 
+    
+
+#     background-color: rgba(0, 0, 0, 0.5); 
+#     padding: 20px;
+#     border-radius: 10px;
+# }
+

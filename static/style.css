@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Basic reset
 * {
     margin: 0;
     padding: 0;
@@ -191,6 +191,26 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* About Page Specific Styles */
 
 
@@ -201,10 +221,12 @@ section {
     align-items: center;
     flex-wrap: wrap;
     background-color: white;
-    padding: 40px 20px;
+    padding: 180px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .about-section .profile-image {
@@ -351,20 +373,21 @@ header nav ul li a:hover {
 
 
 /* .project-item1{
-    background-image: url(./images/hublot\ background.webp);
+    background-image: url(../static/images/hublot\ background.webp);
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
     height: 30vh; 
     margin: 0;
     padding: 0;
-    color: yellow; /
+    color: yellow; 
     
 
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
-} */
+}
+ */
 
 
 
@@ -373,8 +396,7 @@ header nav ul li a:hover {
 
 
 
-
-/* Main content styling
+ /* Main content styling */
 main {
     padding: 40px 0;
     background-color: #fff;
@@ -419,7 +441,7 @@ main {
 
 .project-link:hover {
     color: #16a085;
-} */
+} 
 
 
 
@@ -620,4 +642,4 @@ textarea {
 
 
 
-
+ */
