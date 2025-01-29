@@ -47,7 +47,7 @@ def contact():
         try:
             # Send the email
             mail.send(msg)
-            return redirect(url_for('contact_success'))  # Redirect to a success page after sending the email
+            return redirect(url_for('success'))  # Redirect to a success page after sending the email
         except Exception as e:
             print(f"Error sending email: {e}")
             return "Error sending email."
@@ -55,9 +55,9 @@ def contact():
     return render_template('contact.html')
 
 # Define the contact success page
-@app.route('/contact/success')
-def contact_success():
-    return "Your message has been sent successfully!"
+@app.route('/success')
+def success():
+    return render_template("success.html")
 
 # Run the application on localhost:5000
 if __name__ == '__main__':
@@ -73,19 +73,6 @@ if __name__ == '__main__':
 
 
 
-# .project-item1{
-#     background-image: url(../static/images/hublot\ background.webp);
-#     background-size: cover; 
-#     background-position: center center; 
-#     background-repeat: no-repeat; 
-#     height: 30vh; 
-#     margin: 0;
-#     padding: 0;
-#     color: yellow; 
-    
 
-#     background-color: rgba(0, 0, 0, 0.5); 
-#     padding: 20px;
-#     border-radius: 10px;
-# }
+
 
