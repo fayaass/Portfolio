@@ -9,9 +9,9 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # You can use other mail servers l
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = 'muhammedfayas59504@gmail.com'  # Replace with your email
-app.config['MAIL_PASSWORD'] = 'fwqgcfqmqnajyfts'  # Replace with your email password or an app-specific password
-app.config['MAIL_DEFAULT_SENDER'] = 'muhammedfayas59504@gmail.com'  # Default sender address
+app.config['MAIL_USERNAME'] = 'muhammedfayas815@gmail.com'  # Replace with your email
+app.config['MAIL_PASSWORD'] = 'mpkoeoopzzvqejyo'  # Replace with your email password or an app-specific password
+app.config['MAIL_DEFAULT_SENDER'] = 'muhammedfayas815@gmail.com'  # Default sender address
 
 # Initialize Flask-Mail
 mail = Mail(app)
@@ -41,7 +41,7 @@ def contact():
         message = request.form['message']
 
         # Create the email message
-        msg = Message(f"New message from {name}", recipients=["muhammedfayas59504@gmail.com"])  # Recipient email here
+        msg = Message(f"New message from {name}", recipients=["muhammedfayas815@gmail.com"])  # Recipient email here
         msg.body = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
 
         try:
